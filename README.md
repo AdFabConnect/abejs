@@ -1,3 +1,5 @@
+> This repository is not maintained anymore. It has been superceded by a fork I made (gregorybesson) on my own repo "abecms" which is maintained during my free time (mainly the nights and week-ends ;)
+
 [![Develop Branch Build Status](https://travis-ci.org/AdFabConnect/abejs.svg)](https://travis-ci.org/AdFabConnect/abejs)
 [![Build status](https://ci.appveyor.com/api/projects/status/dv6yt84497wseuxc?svg=true)](https://ci.appveyor.com/project/gregorybesson/abejs)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/AdFabConnect/abejs/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/AdFabConnect/abejs/)

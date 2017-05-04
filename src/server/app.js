@@ -93,7 +93,7 @@ app.use(flash())
 app.use(cookieParser())
 app.use(passport.initialize())
 app.use(passport.session())
-app.use(bodyParser.urlencoded({limit: '1gb', extended: true, parameterLimit: 10000 }))
+app.use(bodyParser.urlencoded({limit: '1gb', extended: true, parameterLimit: 1000000 }))
 app.use(csrf({
   cookie: {
     secure: config.cookie.secure

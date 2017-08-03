@@ -76,6 +76,7 @@ function startProcess() {
   publishNext(files, files.length, function (i) {
     log('total ' + i + ' files')
     log('publish process finished ' + getTime())
+    abeExtend.lock.remove('generate-posts')
     process.exit(0)
   })
 }

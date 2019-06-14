@@ -60,7 +60,7 @@ If you want to use more than inline json data, the source attributes can use man
 > Inline json
 
 ```html
-{{abe type='data' key='titles' desc='Pick a title' source='[{"title":"My article"},{"title":"My website"},{"title":"My blog"}]' display="title" editable="true"}}
+{{abe type='data' key='titles' desc='Pick a title' source='[{"title":"My article"},{"title":"My website"},{"title":"My blog"}]' display='title' editable='true'}}
 ```
 
 this will __display__ (*because editable is true*) an input select with __3 choices__ (*"My article", "My website", "My blog" are values of title choosed with diplay parameter*)

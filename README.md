@@ -1,20 +1,17 @@
-> This repository is not maintained anymore. It has been superceded by a fork I made (gregorybesson) on my own repo "abecms" which is maintained during my free time (mainly the nights and week-ends ;)
+# Abe, A better engine
+
+> :information_source: This repository is not maintained anymore. It has been superceded by a fork I made (gregorybesson) on my own repo "abecms" which is maintained during my free time (mainly the nights and week-ends).
+
+> Abe is your __static websites generator__ with revolutionnary __self-descriptive__ templates
 
 [![Develop Branch Build Status](https://travis-ci.org/AdFabConnect/abejs.svg)](https://travis-ci.org/AdFabConnect/abejs)
 [![Build status](https://ci.appveyor.com/api/projects/status/dv6yt84497wseuxc?svg=true)](https://ci.appveyor.com/project/gregorybesson/abejs)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/AdFabConnect/abejs/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/AdFabConnect/abejs/)
 [![Coverage Status](https://coveralls.io/repos/github/AdFabConnect/abejs/badge.svg?branch=master)](https://coveralls.io/github/AdFabConnect/abejs?branch=master)
-[![Dependency Status](https://www.versioneye.com/user/projects/57ea4badbd6fa600316f9f6c/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57ea4badbd6fa600316f9f6c)
 [![Inline docs](http://inch-ci.org/github/adfabconnect/abejs.svg?branch=master)](http://inch-ci.org/github/adfabconnect/abejs)
 [![Latest Stable Version](https://img.shields.io/npm/v/abe-cli.svg)](https://www.npmjs.com/package/abe-cli)
 [![Total Downloads](https://img.shields.io/npm/dt/abe-cli.svg)](https://www.npmjs.com/package/abe-cli)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/AdFabConnect/abejs/master/LICENSE)
-# Abe, A better engine
-
-> Abe is your __static websites generator__ with revolutionnary __self-descriptive__ templates
-
-[![NPM](https://nodei.co/npm/abe-cli.png?downloads=true&downloadRank=true)](https://nodei.co/npm/abe-cli/)
-[![NPM](https://nodei.co/npm-dl/abe-cli.png?months=3&height=3)](https://nodei.co/npm/abe-cli/)
 
 # Demo
 Deploy your own Abe demo on Heroku
@@ -66,7 +63,7 @@ See the complete [changelog](./CHANGELOG.md)
 - Unit testing covers more than 60% of the code :)
 
 ### 2.10.*
-- Template designer : isEditor variable can be used in a template
+- Template designer: `isEditor` variable can be used in a template
 - Bugfixes
 
 ### 2.9.*
@@ -99,13 +96,13 @@ See the complete [changelog](./CHANGELOG.md)
 - The first unit tests are implemented
 - Quality control with esLint added
 - Continuous Integration with [Travis](https://travis-ci.org/AdFabConnect/abejs)
-- Unit test coverage added : [coveralls](https://coveralls.io/github/AdFabConnect/abejs?branch=master)
+- Unit test coverage added: [coveralls](https://coveralls.io/github/AdFabConnect/abejs?branch=master)
 - Select data become a first class citizen in Manager => perf X50 on page display including templates with select statements
 
 ### 2.3.*
 - don't block response when upload image file size reaches a predefined limit
 - allow video upload
-- New handlebars helper : isTrue() (cf. doc)
+- New handlebars helper: isTrue() (cf. doc)
 - Replacing `Sql.deep_value_array` with `eval` in abe-sql.js resulting in a performance boost on request calculation
 - precompilation of templates added as configurable option resulting in a performance boost on page display
 - Removing pagination option from Abe
@@ -135,7 +132,7 @@ New features :
 
 # Getting started
 
-With __npm__ : ```$ npm install -g abe-cli ```
+With __npm__: `$ npm install -g abe-cli`
 
 ## Unix
 
@@ -149,7 +146,7 @@ With __npm__ : ```$ npm install -g abe-cli ```
 
 ## Abe command line tool
 
-Create website a  ```$ abe create mysite ```
+Create website a  `$ abe create mysite`
 this create your __website structure__ that can be overridden with a json config file
 
 Default project structure :
@@ -165,15 +162,15 @@ Default project structure :
 
 Launch abe engine 
 
-```$ cd mysite ```
+`$ cd mysite`
 
-```$ abe serve ```
+`$ abe serve`
 
 OR
 
 start server with nodemon (dev)
 
-```$ abe servedev ```
+`$ abe servedev`
 
 > default config
 
@@ -184,11 +181,8 @@ start server with nodemon (dev)
 Usage: abe [commande] {OPTIONS}
 
 Standard Options:
-
    --port, -p <port> 	Use a specific port
-   
    --interactive , -i   Open abe inside browser (use with serve command)
-
 ```
 
 ## Usage
@@ -197,57 +191,47 @@ Standard Options:
 Usage: abe [commande] {OPTIONS}
 
 Standard Options:
-
---version, -v 	Output the version number
-
-   --help, -h 	Show this message
-
+   --version, -v   Output the version number
+   --help, -h 	   Show this message
 ```
 
 ## Creating abe template
-List of self-descriptive Abe tag
 
-- tag __text__ :
+List of self-descriptive Abe tag.
 
+- tag __text__:
 ```
 {{abe type='text' key='text_key' desc='give some tips' tab='default'}}
 ```
-- tag __link__
-
+- tag __link__:
 ```
 <a href="{{abe type='link' key='link_key' desc='give some tips' title='html title' tab='default'}}">
-	my link
+  my link
 </a>
 ```
-- tag __image__
-
+- tag __image__:
 ```
 <img src="{{abe type='image' key='image_key' desc='give some tips' width='100' height='100' alt='html alt' tab='default'}}" />
 ```
-- tag __textarea__
-
+- tag __textarea__:
 ```
 {{abe type='textarea' key='textarea_key' desc='give some tips' tab='default'}}
 ```
-- tag __file__
-
+- tag __file__:
 ```
 {{abe type='file' filetype='file_type' key='file_key' desc='give some tips' tab='default'}}
 ```
-- tag __rich__
-
+- tag __rich__:
 ```
 {{abe type='rich' key='rich_key' desc='give some tips' tab='default'}}
 ```
-- tag __data__
+- tag __data__:
+See [doc abe meta](docs/abe-data.md).
 
-[doc abe meta](docs/abe-data.md)
-
-- loop each (create content bloc) 
-
+- loop each (create content bloc):
 ```
 {{#each key_name}}
-​	{{abe type='text' key='key_name.text_key' desc='give some tips' tab='default'}}
+  {{abe type='text' key='key_name.text_key' desc='give some tips' tab='default'}}
 {{/each}}
 ```
 
@@ -270,12 +254,11 @@ List of self-descriptive Abe tag
 - [abe plugin hook list](docs/abe-hooks.md)
 - [abe attributes](docs/abe-attributes.md)
 
-More detailled documentation comming soon
+More detailled documentation comming soon.
 
-## Adding a template and assets (css / js / images ...)
+## Adding a template and assets (CSS, JS, images, etc.)
 
-to add a template just paste it inside of templates directory
-
+To add a template just paste it inside of templates directory:
 ```
 - mysite
  |_ templates 
@@ -283,18 +266,18 @@ to add a template just paste it inside of templates directory
 	|_ template_files
 ```
 
-Assets must be in the same folder of your project and have the same name followed by `_files`
+Assets must be in the same folder of your project and have the same name followed by `_files`.
 
-More detailled documentation comming soon
+More detailled documentation comming soon.
 
-## user management
+## User management
 
-[doc abe user, custom actions & workflow](docs/abe-users.md)
+See [doc abe user, custom actions & workflow](docs/abe-users.md).
 
 
 ## Custom Abe admin engine
 
-[doc abe admin override](docs/abe-users.md)
+See [doc abe admin override](docs/abe-users.md).
 
 
 ## Abe command to build all pages
@@ -313,8 +296,7 @@ coming soon
 
 Setup path to python
 
-Open git bash then run
-
+Open git bash then run:
 ```shell
 PATH=$PATH:/c/Python27/
 npm config set python /C/Python27/
@@ -350,6 +332,3 @@ git clone abe outside of your blog directory (not in abesite) :
 to launch your blog using Abe, under Linux or Mac, you have to set an Environment variable pointing to your blog :
 
 ```$ ROOT=/my_path_to_the_blog npm run startdev ```
-
-=======
-# abe-test-plugin

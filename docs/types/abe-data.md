@@ -4,7 +4,7 @@
 
 ## How does it work ?
 
-###Basic example
+### Basic example
 
 ```html
 {{abe type='data' key='colors' desc='Pick a color' source='["red", "green", "yellow"]'}}
@@ -14,7 +14,7 @@
 	...
 ```
 
-###Parameters
+### Parameters
 
 > __type__ = data
 > 
@@ -33,7 +33,7 @@ optional parameters
 - prefill-quantity = (Int)
 - autocomplete = (Boolean)
 
-##Use it
+## Use it
 
 Display user picked values in your html files
 
@@ -55,7 +55,7 @@ If you want to use more than inline json data, the source attributes can use man
 - http webservice
 - Sql like request (use sql SELECT syntax to find published content into abe website)
 
-###Examples
+### Examples
 
 > Inline json
 
@@ -159,7 +159,7 @@ If you want to display inside the input select the "title" value
 
 > More complex SELECT
 
-###FROM
+### FROM
 
 ```html
 {{abe type='data' key='articles' desc='articles' source="select * from articles, blog" display="title" editable='true'"}}
@@ -183,7 +183,7 @@ Notes: You can use variables on from like this
 {{abe type='data' key='articles' desc='articles' source="select * from /{{some_json_key}}/{{some_other}}" display="title" editable='true'"}}
 ```
 
-##Use it
+## Use it
 
 ```html
 {{#each articles}}
@@ -191,7 +191,7 @@ Notes: You can use variables on from like this
 {{/each}}
 ```
 
-##Other parameter
+## Other parameter
 
 > editable="true"
 
